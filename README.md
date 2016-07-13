@@ -1,5 +1,14 @@
 # JulyBattle
-Anularjs&amp;Requirejs&amp;Grunt&amp;Karma&amp;Jasmine&amp;Mocha
+#技术堆栈
+          ----Nodejs
+          ----Anularjs
+          ----Requirejs
+          ----Grunt
+          ----Karma
+          ----Jasmine
+          ----Mocha
+          ----MongoDB
+
 
 
 #关于目录结构解释
