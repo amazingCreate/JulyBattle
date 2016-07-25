@@ -15,15 +15,16 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/app/login/*.js',
-      'test-main.js',
+      { pattern: 'lib/**/*.js', included: false },
+      { pattern: 'src/**/*.js', included: false },
+      { pattern: 'test/**/*Spec.js', included: false },
+      'test-main.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-      'karma.conf.js',
-      'Gruntfile.js'
+      'src/main.js'
     ],
 
 
@@ -56,6 +57,7 @@ module.exports = function (config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
 
+    autoWatchBatchDelay: 250,
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher

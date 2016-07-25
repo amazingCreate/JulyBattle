@@ -16,6 +16,18 @@ require.config({
   // Karma serves files under /base, which is the basePath from your config file
   baseUrl: '/base',
 
+  // example of using a couple of path translations (paths), to allow us to refer to different library dependencies, without using relative paths
+  paths: {
+    'jquery': 'vendor/jquery/jquery',
+    'underscore': 'vendor/underscore/underscore',
+  },
+
+  // example of using a shim, to load non AMD libraries (such as underscore)
+  shim: {
+    'underscore': {
+      exports: '_'
+    }
+  },
   // dynamically load all test files
   deps: allTestFiles,
 

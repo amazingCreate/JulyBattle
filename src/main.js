@@ -1,11 +1,14 @@
 require.config({
-    baseUrl: "js",
+    baseUrl: "",
     paths: {
-        'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
+        'app': '/src/app',
+        'angular': '/src/vendor/Angular/angular',
+        'underscore': '/src/vendor/underscore/underscore'
     },
     shim:
     {
-        angular: { exports: 'angular' }
+        angular: { exports: 'angular' },
+        underscore: { exports: '_' }
     },
-    deps: ['app']
+    deps: ['app', 'angular']
 });
